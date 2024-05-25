@@ -5,14 +5,18 @@
 <hr>
 
 <h3>Control Flow Graph</h3>
-![CFG.png](CFG.png)
+
+[//]: # (![CFG.png]&#40;CFG.png&#41;)
+<img src="CFG.png">
 
 <h3>Цикломатска комплексност</h3>
 (Број на ребра - број на јазли) + 2 = (31 - 23) + 2 = 10  
 Број на предикатни јазли + 1 = 9 + 1 =10
 
 <h3>Тест случаи според критериумот Every statement</h3>
-![every-branch.png](every-branch.png)
+
+[//]: # (![every-branch.png]&#40;every-branch.png&#41;)
+<img src="every-branch.png">
 
 Test Case 1:  
 -allItems е null, што предизвикува RuntimeException со порака "allItems list can't be null!". Поради тоа, кодот се прекинува веднаш.  
@@ -26,7 +30,9 @@ Test Case 5:
 allItems содржи два елементи: еден со баркод "023" и попуст од 0.1 и цена од 100, и друг со баркод "123" и цена од 300 без попуст. Вкупната цена се пресметува и споредува со payment кое е 301. Поради условот за намалување на 30 единици од сумата, функцијата враќа true.    
 
 <h3>Тест случаи според критериумот Multiple Condition</h3>
-![multiple_conditions.png](multiple_conditions.png)
+
+[//]: # (![multiple_conditions.png]&#40;multiple_conditions.png&#41;)
+<img src="multiple_conditions.png">
 
 -Во првата итерација (FXX), цената на првиот елемент е 200, што значи дека item.getPrice() > 300 е false (F). Останатите услови се неважни бидејќи првиот услов не е исполнет.  
 -Во втората итерација (TFX), цената на вториот елемент е 301, што значи дека item.getPrice() > 300 е true (T), но попустот е 0, така што item.getDiscount() > 0 е false (F). Третиот услов е неважен.  
